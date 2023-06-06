@@ -1,16 +1,31 @@
 import React, { Component } from 'react'
-import { Category, Container, Wrapper } from './style'
+import { Category, Container, Wrapper,Icons,Input,User } from './style'
 import Sidebar from './Sidebar'
 import Body from './Body'
+import logo from '../assets/imgs/logo.png'
+import logoo from '../assets/imgs/flogo.jpg'
 
 export default class YouTube extends Component {
   render() {
     return (
       <Container>
             <Wrapper>
-              <Category>Birinchi</Category>
-              <Category>Ikinchi</Category>
-              <Category>Uchinchi</Category>
+              <Category>
+                <Icons.Burger/>
+                <Icons.Logo  src={logo} alt='Logo'/>
+              </Category>
+              <Category>
+                <Input placeholder='search'/>
+                <Icons.Search/>
+              </Category>
+              <Category end>
+                
+                <Icons.Bell />
+                <Icons.Menu />
+                <Icons.Menu />
+                <User src={logoo} alt='logo'/>
+
+              </Category>
             </Wrapper>
       
       <Container flex>
