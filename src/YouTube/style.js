@@ -10,7 +10,7 @@ import {ReactComponent as menu} from '../assets/icons/menu.svg'
 export const Container = styled.div`
 display: flex;
 flex-direction: ${({flex}) => !flex&&'column'};
-height: 100vh;
+/* height: 100vh; */
 background: #212121;
 color: #FFFFFF;
 padding: ${({flex}) => !flex&&'0 30px'};
