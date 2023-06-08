@@ -20,9 +20,9 @@ export default class YouTube extends Component {
               </Category>
               <Category end>
                 
+                <Icons.Video />
+                <Icons.Menu />
                 <Icons.Bell />
-                <Icons.Menu />
-                <Icons.Menu />
                 <User src={logoo} alt='logo'/>
 
               </Category>

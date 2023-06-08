@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Title, Wrapper } from '../Sidebar/style'
+import { Container, ItemWrapper, Title, Wrapper } from '../Sidebar/style'
 import { sidebar } from '../../utils/sidebar'
 
 
@@ -9,12 +9,18 @@ export default class Sidebar extends Component {
       <Container>
 
         {
-          sidebar.map((value) => (
-            <Wrapper key={value.id} style={{borderBottom: '1px solid white'}}>
-             { value.title && <Title title>{value.title}</Title>}
+          sidebar.map(({icon,id, title,data}) => (
+            <Wrapper key={id}>
+             { title && <Title title>{title}</Title>}
               {
-                value.data.map((item)=> (
-                  <Title>{item.title}</Title>
+               data.map(({icon:Icon, title: subTitle})=> (
+
+                <ItemWrapper style={{display: 'flex'}}>
+
+                  <Icon/>
+                  <Title>{subTitle}</Title>
+
+                </ItemWrapper>
                 ))
               }
             </Wrapper>
