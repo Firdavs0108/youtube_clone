@@ -34,7 +34,19 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
-color: ${({desc})=> desc? 'rgba(255, 255, 255, 0.6)': '#FFFFFF'}
+color: ${({desc})=> desc? 'rgba(255, 255, 255, 0.6)': '#FFFFFF'};
+
+`
+
+export const Button= styled.button`
+background: black ;
+border: none; 
+color: rgba(255, 255, 255, 0.6);
+cursor:'pointer' ;
+&:hover{
+      background-color: blue;
+      color: white
+    }
 
 `
 
