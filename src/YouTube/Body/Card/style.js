@@ -11,7 +11,7 @@ margin-bottom: 20px;
 export const Video= styled.img`
 width: 100%;
 height: 200px; 
-background-color: white
+background-color: white;
 
 `
 
