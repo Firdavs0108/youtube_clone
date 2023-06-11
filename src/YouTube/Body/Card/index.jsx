@@ -16,7 +16,7 @@ export default class YouTube extends Component {
             <Title desc>{id} | {user.name}</Title>
             <div style={{ display: 'flex' }}>
               <Title desc>
-                {view} {time} <button style={{background: 'black', border: 'none', color: 'rgba(255, 255, 255, 0.6)'}} onClick={() => onDelete(id)}>Delete</button>
+                {view} {time} <button style={{background: 'black', border: 'none', color: 'rgba(255, 255, 255, 0.6)', cursor:'pointer'}} onClick={() => onDelete(id)}>Delete</button>
               </Title>
             </div>
           </div>
