@@ -83,7 +83,7 @@ box-sizing: border-box;
 :focus{
     outline: none;
 }
-color: rgba(255, 255, 255, 0.2);
+color: rgba(255, 255, 255, 0.5);
 padding-left: 10px;
 
 `

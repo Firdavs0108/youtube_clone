@@ -9,13 +9,13 @@ export default class Sidebar extends Component {
       <Container>
 
         {
-          sidebar.map(({icon,id, title,data}) => (
-            <Wrapper key={id}>
-             { title && <Title title>{title}</Title>}
+          sidebar.map(({icon,id, title,data}, index) => (
+            <Wrapper key={index}>
+             { title && <Title title = 'true'>{title}</Title>}
               {
-               data.map(({icon:Icon, title: subTitle})=> (
+               data.map(({icon:Icon, title: subTitle}, index)=> (
 
-                <ItemWrapper style={{display: 'flex'}}>
+                <ItemWrapper key={index}>
 
                   <Icon/>
                   <Title>{subTitle}</Title>
