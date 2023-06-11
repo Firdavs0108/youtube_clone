@@ -8,7 +8,9 @@ import { ReactComponent as tubevideos } from '../assets/icons/videos.svg'
 import { ReactComponent as watchlater } from '../assets/icons/watchlater.svg'
 import { ReactComponent as likedvideo } from '../assets/icons/liked.svg'
 import { ReactComponent as showmore } from '../assets/icons/search.svg'
-import { ReactComponent as img1 } from '../assets/icons/img1.svg'
+import { ReactComponent as img1 } from '../assets/icons/img5.svg'
+import { ReactComponent as img2 } from '../assets/icons/img6.svg'
+
 
 
 
@@ -64,6 +66,11 @@ width: 24px;
 height: 24px;
 `
 
+Icons.Img2 = styled(img2)`
+width: 24px;
+height: 24px;
+`
+
 export const sidebar = [
   {
     id:1,
@@ -94,13 +101,13 @@ export const sidebar = [
         title: 'Subscriptions',
         data: [
             { id:1, title:'WebBrain Academy', icon:Icons.Img1},
-            { id:2, title:'WebBrain Academy', icon:Icons.Home},
-            { id:3, title:'WebBrain Academy', icon:Icons.Home},
-            { id:4, title:'WebBrain Academy', icon:Icons.Home},
-            { id:5, title:'WebBrain Academy', icon:Icons.Home},
-            { id:6, title:'WebBrain Academy', icon:Icons.Home},
-            { id:7, title:'WebBrain Academy', icon:Icons.Home},
-            { id:8, title:'WebBrain Academy', icon:Icons.Home},
+            { id:2, title:'Abdukarim Mirzayev', icon:Icons.Img1},
+            { id:3, title:'Seoul', icon:Icons.Img1},
+            { id:4, title:'Gachon University', icon:Icons.Img1},
+            { id:5, title:'Sejong Academy', icon:Icons.Img1},
+            { id:6, title:'Busan Academy', icon:Icons.Img1},
+            { id:7, title:'Seoul Academy', icon:Icons.Img1},
+            { id:8, title:'Tashkent Academy', icon:Icons.Img1},
     ],
 },
 
@@ -108,9 +115,9 @@ export const sidebar = [
     id:4,
         title: 'More From YouTube',
         data: [
-            { id:1, title:'YouTube Premium', icon:Icons.Home},
+            { id:1, title:'YouTube Premium', icon:Icons.Explore},
             { id:2, title:'Settings', icon:Icons.Home},
-            { id:3, title:'Help', icon:Icons.Home},
+            { id:3, title:'Help', icon:Icons.Search},
             { id:4, title:'Report', icon:Icons.Home}
     ],
 },

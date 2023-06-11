@@ -15,7 +15,7 @@ export const data = [
 
 {
     id:2, 
-    title:'Jumong', 
+    title:'Brave1', 
     video: 'https://th.bing.com/th/id/OIP.qk4wlHuG2HhgLG5n54Ky3AHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
     view: '90M view',
     time: '..1 minuts before',
